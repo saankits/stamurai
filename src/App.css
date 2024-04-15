@@ -1,0 +1,389 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width:100%;
+  height:70px;
+  background-color: rgba(0, 0, 0, 0.226);
+  position: relative;
+}
+.h-container{
+  width:90%;
+  height:70px;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h-left{
+  width:300px;
+  display:flex;
+  gap:20px;
+  cursor:pointer
+}
+.h-left > span{
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  border:1px solid black;
+  padding : 1px 7px;
+  color:antiquewhite;
+  background-color: black;
+}
+.h-right > input {
+  box-sizing: border-box;
+  width:280px;
+  height:35px;
+  padding:0 10px;
+  border-radius:10px;
+  border:1px solid rgb(126, 108, 108)
+}
+.h-right > button {
+  box-sizing: border-box;
+  padding:5px;
+  margin-left: 5px;
+  height:35px;
+  padding:0 10px;
+  border-radius:10px;
+  border:1px solid rgb(126, 108, 108)
+}
+.city-table{
+  height:480px;
+  border:1px solid black;
+  overflow-y: scroll
+}
+thead{
+  width:100%
+}
+tbody{
+  width: 100%;
+}
+.togglemenu{
+  position: absolute;
+  top:0px;
+  right:0;
+  background-color: #000000ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  width:80%;
+  height:69px;
+  /* display: none; */
+}
+.togglemenu > input{
+  width:70%
+}
+.togglemenu>button{z-index: 5;}
+.menu{
+  position: absolute;
+  top:25px;
+  right:25px;
+  display: none;
+}
+.menu > i{
+  scale:1.5
+}
+.fa-xmark{
+  position: absolute;
+  color: white;
+  top:10px;
+  right:10px;
+}
+thead tr{
+  height:40px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width:100%;
+  background-color: rgb(187, 255, 252);
+}
+tr{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.63);
+
+}
+tbody tr{
+  height:30px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width:100%;
+  text-align: center;
+}
+td, th{
+  width:20%;
+  height: 35px;
+}
+table{
+  border-collapse: collapse;
+  width:100%
+}
+.weather{
+  border:1px solid rgb(204, 245, 255);
+  background-color: rgb(204, 245, 255);
+  padding:0 10%;
+  position: relative;
+}
+.weather-nav{
+  width : 80%;
+  margin: 10px 10% ;
+  display:flex;
+  justify-content: space-between;
+}
+.weather-nav > span {
+  font-size: 25px;
+  font-weight:700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main{
+  width:100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.336);
+  border-radius: 13px;
+}
+.main > div{
+  display:flex;
+  justify-content: space-between;
+}
+.main > h2{
+  text-align: center;
+  margin:10px 0px
+}
+.main-forecast{
+  width:50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.temp-section{
+  width:50%;
+}
+.current-temp{
+  width:100%;
+  text-align: center;
+  font-size: 40px;
+  margin: 15px auto 20px;
+  font-weight: 700;
+}
+.max-min{
+  width:110%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 10px auto 10px;
+  font-weight: 700;
+}
+.clouds, .visibility{
+  width:100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.336);
+  border-radius: 13px;
+}
+.wind{
+  width:100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.336);
+  border-radius: 13px;
+}
+.timings{
+  width:100%;box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.336);
+  border-radius: 13px;
+}
+.clouds, .visibility{
+  width:30%;
+  height:100px;
+  padding:10px 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.additional-info{
+  display: flex;
+  justify-content: space-around;
+  margin : 25px 0 25px 0
+}
+.wind, .timings{
+  width:80%;
+  margin:auto;
+  height:100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.timings{
+  margin: 20px auto
+}
+.wind>span, .timings>span{
+  font-size: 25px;
+  font-weight: 700;
+
+}
+.footer{
+  width : 80%;
+  background-color:rgb(76, 77, 59);
+  color:white;
+  display:flex;
+  padding:20px 10%;
+  gap:50px
+
+}
+.f-left{
+  width:40%
+}
+
+.f-left > h2{
+  font-size: 40px;
+  margin:10px 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+}
+.f-left>p{
+  font-size: 20px;
+  margin:10px 10px 15px 0px
+}
+.f-right{
+  width:45%
+}
+.f-right>h2{
+  width:35px;
+  margin : 20px 0;
+  width:100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.social-links{
+  width:100%;
+  display: flex;;
+  gap:30px;
+  margin-bottom: 15px;
+}
+.social-links>i{
+  scale:1.5;
+
+}
+@media screen and (max-width:1280px) {
+  .temp-section>.current-temp{
+    font-size: 30px;
+  }
+  .temp-section>.max-min{
+    font-size: 18px;
+  }
+  .main-forecast{
+    font-size: 18px;
+  }
+  .additional-info>.clouds , .additional-info>.visibility{
+    font-size: 22px;
+  }
+}
+@media screen and (max-width:930px) {
+  
+  .temp-section>.max-min{
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .lon-lat{
+    display: none;
+  }
+  .wind > span, .timings > span{
+    font-size: 20px;
+  }
+  .weather-nav {
+    justify-content: center;
+  }
+}
+@media screen and (max-width:755px) {
+  
+  .h-left > span {
+    font-size: 25px;
+    padding: 1px 5px;
+  }
+  .h-left {
+    width: 250px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width:700px) {
+  
+  .temp-section>.current-temp{
+    font-size: 25px;
+  }
+  .additional-info > .clouds, .additional-info > .visibility {
+    font-size: 19px;
+  }
+  .clouds, .visibility {
+    padding: 8px 15px;
+  }
+}
+@media screen and (max-width:670px) {
+  .h-right > input {
+    box-sizing: border-box;
+    width: 180px;
+    height: 25px;
+  }
+  .h-right > button {
+    box-sizing: border-box;
+    height: 25px;
+  }
+}
+@media screen and (max-width:570px) {
+  .wind > span, .timings > span {
+    font-size: 16px;
+  }
+  .wind > span, .timings > span {
+    font-size: 12px;
+  }
+  .h-left > span {
+    font-size: 20px;
+    padding: 1px 3px;
+  }
+  .h-left {
+    width: 180px;
+    gap: 7px;
+  }
+  .additional-info > .clouds, .additional-info > .visibility {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:485px) {
+  .wind > span, .timings > span {
+    font-size: 14px;
+  }
+  .wind > span, .timings > span {
+    font-size: 10px;
+  }
+  .h-left > span {
+    font-size: 16px;
+    padding: 1px 1px;
+  }
+  .h-left {
+    width: 150px;
+    gap: 7px;
+  }
+  .wind, .timings {
+    height: 60px;
+  }
+}
+@media screen and (max-width:445px) {
+  .h-right{
+    display: none;
+  }
+  .menu{
+    display: inline;
+  }
+  .footer {
+    width: 90%;
+    background-color: rgb(76, 77, 59);
+    color: white;
+    display: flex;
+    padding: 20px 5%;
+    gap: 50px;
+  }
+  .f-left>h2{
+    font-size: 35px;
+  }
+  .f-left > p{
+    display: none;
+  }
+}
